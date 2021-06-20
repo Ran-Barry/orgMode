@@ -1,0 +1,59 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="src/readtheorg_theme/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="src/readtheorg_theme/css/readtheorg.css"/>
+
+#+HTML_HEAD: <script type="text/javascript" src="src/lib/js/jquery.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="src/lib/js/bootstrap.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="src/lib/js/jquery.stickytableheaders.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="src/readtheorg_theme/js/readtheorg.js"></script>
+
+#+HTML_HEAD: <style>pre.src{background:#343131;color:white;} </style>
+
+#+author: 1812050110-冉彦彬
+
+* 在ORG文档中输入以下内容观察HEADLINE结构
+
+** Second level
+*** Third level
+    some text
+*** Third level
+    more text
+
+* 回答以下问题
+
+#+CAPTION:Table
+| Question                                      | Command(Tips)            |
+| Create a table in org-mode                    | Input ~¦ contents ¦ RET~ |
+| re-align the table without moving the coursor | ~C-c C-c~                |
+| re-align the table,move to next field         | ~TAB~                    |
+| move to previous field                        | ~S-TAB~                  |
+| re-align the table,move to next row           | ~RET~                    |
+| move to beginning/end of field                | ~M-a/e~                  |
+| move the current column left                  | ~M->/<-~                 |
+| kill the current column                       | ~M-S-~                   |
+| insert new column to left of cursor position  | ~M-S- ->~                |
+| move the current row up/down                  | ~M-↑/↓~                |
+| kill the current row or horizontal line       | ~M-S-↑~                 |
+| insert new row above the current row          | ~M-S-↓~                 |
+| insert hline below (C-u:above)curent row      | ~C-c -~                  |
+| insert hline and move to line below it        | ~C-c RET~                |
+| sort lines in region                          | ~C-c ^~                  |
+|-----------------------------------------------+--------------------------|
+
+* 插入图片和超链接
+
+[[file:figures/pic.jpg][这是图片名称，点击此链接在新窗口打开图片]]
+[[file:figures/pic.jpg]]
+
+这是到[[https://www.baidu.com][百度]]的链接
+
+* 第三方插件导出带有CSS样式的html文件
+
+: 用EMACd打开次文件的源文件lab.org，在最开始的注释部分写明如何使用本文档的插件
+
+* 用EMACS的ORGMODE编写WINDBG实验文档
+
+: 提示：导出html文档命令 C-c C-e h h
+
+* 将导出的html 文档发布到github上
+** 将文档保存到github
+** 将导出的html进行发布
